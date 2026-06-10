@@ -1,0 +1,21 @@
+.fl-footer {
+  padding: 32px 48px;
+  border-top: 1px solid var(--fl-dim);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fl-footer-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.12em;
+  color: var(--fl-lime);
+}
+
+.fl-footer-copy {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--fl-mid);
+  text-transform: uppercase;
+}

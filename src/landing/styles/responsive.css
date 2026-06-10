@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+  .fl-nav             { padding: 16px 24px; }
+  .fl-nav-links       { display: none; }
+  .fl-hero            { padding: 0 24px 56px; }
+  .fl-hero-bg-num     { font-size: min(94vw, 480px); right: -6%; transform: translate(-3%, calc(-50% + 8vh)); }
+  .fl-stats           { grid-template-columns: repeat(2, 1fr); }
+  .fl-stat            { border-bottom: 1px solid var(--fl-dim); }
+  .fl-manifesto       { grid-template-columns: 1fr; gap: 32px; padding: 80px 24px; }
+  .fl-features        { padding: 80px 24px; }
+  .fl-features-grid   { grid-template-columns: 1fr; }
+  .fl-demo            { grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
+  .fl-cta-section     { padding: 100px 24px; }
+  .fl-footer          { padding: 24px; flex-direction: column; gap: 16px; text-align: center; }
+  .fl-email-row       { flex-direction: column; }
+  .fl-email-input     { border-right: 1px solid var(--fl-mid); border-bottom: none; }
+}

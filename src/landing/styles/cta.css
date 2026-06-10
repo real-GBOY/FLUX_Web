@@ -1,0 +1,81 @@
+.fl-cta-section {
+  padding: 140px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.fl-cta-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200, 255, 0, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.fl-cta-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--fl-muted);
+  margin-bottom: 24px;
+}
+
+.fl-cta-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(60px, 12vw, 140px);
+  line-height: 0.88;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.fl-cta-sub {
+  font-size: 14px;
+  color: var(--fl-muted);
+  margin-bottom: 48px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.fl-email-row {
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.fl-email-input {
+  flex: 1;
+  background: var(--fl-dim);
+  border: 1px solid var(--fl-mid);
+  border-right: none;
+  color: var(--fl-white);
+  font-family: 'Courier Prime', monospace;
+  font-size: 14px;
+  padding: 14px 20px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.fl-email-input::placeholder { color: var(--fl-mid); }
+.fl-email-input:focus        { border-color: var(--fl-lime); }
+.fl-email-input.error        { border-color: var(--fl-red); }
+.fl-email-input:disabled     { opacity: 0.5; cursor: not-allowed; }
+
+.fl-email-btn {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: var(--fl-black);
+  background: var(--fl-lime);
+  border: none;
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.fl-email-btn:hover:not(:disabled) { background: var(--fl-white); }
+.fl-email-btn.locked { background: var(--fl-white); cursor: default; }

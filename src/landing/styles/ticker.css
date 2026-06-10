@@ -1,0 +1,35 @@
+.fl-ticker {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid var(--fl-dim);
+  border-bottom: 1px solid var(--fl-dim);
+  padding: 14px 0;
+  background: var(--fl-black);
+  position: relative;
+  z-index: 2;
+}
+
+.fl-ticker-inner {
+  display: flex;
+  white-space: nowrap;
+  animation: fl-ticker 20s linear infinite;
+}
+
+.fl-ticker-item {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: var(--fl-mid);
+  padding: 0 40px;
+  flex-shrink: 0;
+}
+
+.fl-dot {
+  color: var(--fl-lime);
+  margin-right: 16px;
+}
+
+@keyframes fl-ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

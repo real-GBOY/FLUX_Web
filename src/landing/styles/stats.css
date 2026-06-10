@@ -1,0 +1,28 @@
+.fl-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid var(--fl-dim);
+}
+
+.fl-stat {
+  padding: 48px 40px;
+  border-right: 1px solid var(--fl-dim);
+}
+.fl-stat:last-child { border-right: none; }
+
+.fl-stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 1;
+  color: var(--fl-lime);
+  display: block;
+}
+
+.fl-stat-label {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--fl-muted);
+  margin-top: 8px;
+  display: block;
+}

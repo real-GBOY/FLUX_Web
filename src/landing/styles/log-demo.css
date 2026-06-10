@@ -1,0 +1,116 @@
+.fl-demo {
+  padding: 120px 48px;
+  border-bottom: 1px solid var(--fl-dim);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.fl-section-label {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--fl-lime);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.fl-demo-text h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.fl-demo-text p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--fl-muted);
+  max-width: 400px;
+  margin: 0;
+}
+.fl-demo-text p strong { color: var(--fl-white); }
+
+.fl-log-widget {
+  background: #0c0c0c;
+  border: 1px solid var(--fl-dim);
+}
+
+.fl-log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--fl-dim);
+}
+
+.fl-log-title {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--fl-muted);
+}
+
+.fl-log-status {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--fl-lime);
+  text-transform: uppercase;
+}
+
+.fl-log-entry {
+  padding: 16px 20px;
+  border-bottom: 1px solid #141414;
+  display: grid;
+  grid-template-columns: 90px 1fr 80px;
+  gap: 16px;
+  align-items: center;
+  transition: background 0.15s;
+}
+.fl-log-entry:hover { background: #111; }
+.fl-log-entry:last-of-type { border-bottom: none; }
+
+.fl-log-exercise {
+  font-size: 13px;
+  color: var(--fl-white);
+  font-weight: 700;
+}
+
+.fl-log-sets {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.fl-log-set {
+  font-size: 11px;
+  padding: 3px 8px;
+  background: var(--fl-dim);
+  color: var(--fl-muted);
+  font-family: 'Courier Prime', monospace;
+}
+.fl-log-set.pr {
+  background: rgba(200, 255, 0, 0.1);
+  color: var(--fl-lime);
+  border: 1px solid rgba(200, 255, 0, 0.3);
+}
+
+.fl-log-delta {
+  font-size: 12px;
+  text-align: right;
+  color: var(--fl-lime);
+  font-weight: 700;
+}
+.fl-log-delta.neg { color: var(--fl-red); }
+
+.fl-log-footer {
+  padding: 14px 20px;
+  border-top: 1px solid var(--fl-dim);
+  font-size: 11px;
+  color: var(--fl-mid);
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: space-between;
+}

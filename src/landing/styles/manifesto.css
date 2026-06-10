@@ -1,0 +1,32 @@
+.fl-manifesto {
+  padding: 120px 48px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  border-bottom: 1px solid var(--fl-dim);
+}
+
+.fl-manifesto-label {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--fl-muted);
+  padding-top: 8px;
+}
+
+.fl-manifesto-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+
+.fl-manifesto-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--fl-muted);
+  max-width: 600px;
+}
+.fl-manifesto-text .fl-lime { font-weight: 700; }
+.fl-manifesto-text p + p  { margin-top: 20px; }
